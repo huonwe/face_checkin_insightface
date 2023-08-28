@@ -1,6 +1,9 @@
 ## 基于insightface的上课点名系统
 * 活体识别
 * excel导出
+
+![image](https://github.com/huonwe/face_checkin_insightface/blob/main/docs/show.jpg?raw=true)
+
 ## how to use:
 python app.py
 
