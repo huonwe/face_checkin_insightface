@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="/static/register.js"></script>
+    <script src="/static/js/face-api.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/register.css">
+</head>
+<body>
+<div class="stureger_step_box">
+    <div>step One</div> {# select group #}
+</div>
+
+
+<input style="display:none;" id="selectFileReg" type="file" multiple="multiple"/>
+<button id="inputFile_btn_cover" style="display: block" class="file_upload_btn" name="btn_reg" onclick="cover_selectFile()">选择文件</button>
+<button class="file_upload_btn" style="display: block" type="button" name="btn_reg" onclick="uploadPictureForReg()">上传</button>
+<div class="tips">请将图片名以‘学号-姓名'方式命名</div>
+<div class="fileerrorTip"></div>
+<div class="showFileName"></div>
+<div id="registerResult"></div>
+<div id="loading" class="div-loading"></div>
+<div id="preview"></div>
+</body>
+</html>

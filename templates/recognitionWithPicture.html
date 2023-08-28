@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/static/recognitionWithPicture.js"></script>
+    <script src="/static/js/face-api.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/recognitionWithPicture.css" />
+</head>
+
+    <input style="display:none;" id="hidden_selectFileBtn" type="file" multiple="multiple"/>
+    <button class="cover_selectFileBtn" onclick="call_selectFile()">选择文件</button>
+    <button class="cover_selectFileBtn" style="display: block" type="button" onclick="uploadPictureForRecognition()">上传</button>
+{#<div class="fileerrorTip"></div>#}
+<div class="showFileName"></div>
+<div id="loading"></div>
+<div id="div-result" class="picRcognResult"></div>
+
+</html>

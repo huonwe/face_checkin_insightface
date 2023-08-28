@@ -1,0 +1,10 @@
+<html>
+{% for result in results %}
+    <img src="data:image/jpeg;base64,{{ result['jpg'] }}" alt="error">
+    <p>total:{{ result['count'] }}</p>
+    <p>list:</p>
+    {% for person in result['info'] %}
+        <p>id:{{ person['user_id'] }} name:{{ person['user_name'] }}</p>
+    {% endfor %}
+{% endfor %}
+</html>

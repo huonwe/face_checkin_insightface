@@ -1,0 +1,26 @@
+.stu_li_div {
+    margin-top: 0.5em;
+}
+
+.stuinfo_div {
+    /* position: relative; */
+    padding: 0.1em;
+    font-size: 1.2em;
+    width: 19em;
+    height: 1.5em;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0.5em;
+    display:inline-block;
+    border-bottom: 1px solid burlywood;
+}
+
+.operate_stu_btn {
+    /* padding: 0.2em; */
+    font-size: 1.2em;
+    width: auto;
+    height: auto;
+    margin-left: 1em;
+    border: 1px solid rgb(212, 148, 148);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+}

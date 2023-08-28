@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/static/constItems.js"></script>
+    <script src="/static/checkinWithCamera.js"></script>
+    <script src="/static/js/face-api.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/checkinWithCamera.css">
+</head>
+<body>
+<div id="beforeStart">
+<!--     <input id="select_class" class="input-class" type="text" placeholder="Enter classes interval with '|'"> -->
+    <button class="start_btn" type="button" onclick="startCheckin()">开始点名</button>
+</div>
+<div id="afterStart">
+    <button id="end-checkin-btn" onclick="endCheckin()">结束点名</button>
+</div>
+<div class="loading_models"></div>
+<div class="video_box">
+<!--     <div>Your Class: </div><div id="selected_class"></div> -->
+    <video id="camera" width="480px" height="360px" autoplay="autoplay" style="display: none"></video>
+    <canvas id="canvas_draw" width="480px" height="360px" style="display: block"></canvas>
+    <canvas id="canvas_crop" height="160" width="160" style="display: none;"></canvas>
+    <canvas id="canvas_combined" height="160" width="160" style="display: none"></canvas>
+</div>
+<div class="stu_info_box">
+    <div id="unknown_count" class="unknown_count"></div>
+    <div class="stu_info_box_head_line">
+        <span>CID</span><span>NAME</span><span>STATUS</span>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.div-loading {
+    display: none;
+    background:#000;
+    width:10%;
+    height:5%;
+    padding:5px;
+    color:#F00;
+    filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
+}
+
+.cover_selectFileBtn {
+    display: inline;
+    width: auto;
+    height: auto;
+    color: lightcoral;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid pink;
+    font-size: 20px;
+}
+
+.cover_selectFileBtn:hover {
+    background-color: pink;
+}
+
+.picRcognResult {
+    /*display: block;*/
+    /*float: left;*/
+}

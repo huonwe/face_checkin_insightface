@@ -1,0 +1,54 @@
+.cameraBox {
+    width: 500px;
+    height: 500px;
+}
+
+.start_btn {
+    display: inline;
+    width: auto;
+    height: auto;
+    color: lightcoral;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid pink;
+    font-size: 20px;
+}
+
+.start_btn:hover {
+    background-color: pink;
+}
+
+.stu_info_box {
+    user-select: none;
+    right: 5em;
+    top: 5em;
+    position: absolute;
+    background-color: rgba(231,231,231,0.8);
+    width: 17em;
+    min-height: 3em;
+    cursor: move;
+}
+
+/*.stu_info_box:hover {*/
+/*}*/
+
+.stu_info_box_head_line span{
+    color: #3a6ecf;
+    text-align: left;
+    margin-left: 1.7em;
+}
+
+.stu_info_line {
+    margin-top: 0;
+}
+
+.stu_info_line span {
+    width: 2em;
+    text-align: right;
+    margin-left: 0.5em;
+}
+
+
+.unknown_count:before {
+    content: 'FakeReferNum:';
+}

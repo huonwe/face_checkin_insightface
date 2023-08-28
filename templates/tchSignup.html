@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="/static/constItems.js"></script>
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <script src="/static/teacherSignUp.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/teacherLogin.css" />
+    <link rel="icon" href="/static/icon/favicon3.png"/>
+    <link rel="bookmark" href="/static/icon/favicon3.png">
+</head>
+<body>
+    <div class="login_box">
+        <div class="box_header">注册</div>
+        <form id="form-siginup">
+            <div class="inputbox">
+                <input id="teachername" type="text" placeholder="姓名"><br>
+                <input id="teacherid" type="text" placeholder="学号"><br>
+                <input id="teacherpassword" type="password" placeholder="8-20位密码"><br>
+                <input id="password-repeat" type="password" placeholder="请再输一次密码"><br>
+            </div>
+        </form>
+        <div class="logintips"></div>
+        <button class="btn_login" type="button" onclick="SignUp()">注册</button>
+    </div>
+    <a href="/login" class="signup_a">登陆</a>
+
+</body>
+</html>

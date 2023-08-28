@@ -1,0 +1,71 @@
+.stu_info_box {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.div-loading {
+    display: none;
+    background:#000;
+    width:10%;
+    height:5%;
+    padding:5px;
+    color:#F00;
+    filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
+}
+
+.input-class {
+    width: 200px;
+    height: 30px;
+}
+
+.submit {
+    width: 60px;
+    height: 30px;
+}
+
+
+.file_upload_btn {
+    display: inline;
+    width: auto;
+    height: auto;
+    color: lightcoral;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid pink;
+    font-size: 20px;
+}
+
+.file_upload_btn:hover {
+    background-color: pink;
+}
+
+.file_choose_btn {
+    opacity: 0;
+}
+
+.fileerrorTip {
+    color: red;
+}
+.showFileName {
+    color: gray;
+}
+
+.tips {
+    color: gray;
+    font-size: 15px;
+}
+.empty_result_show {
+    margin-left: 45%;
+    margin-top: 25%;
+    color: gray;
+}
+
+.del_stu_btn {
+    border: 1px solid wheat;
+    border-radius: 2px;
+    background: violet;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Welcome</title>
+{#    <script src="/static/js/face-api.js"></script>#}
+    <script src="/static/constItems.js"></script>
+    <script src="/static/js/jquery-3.6.0.js"></script>
+    <script src="/static/Base.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/Base.css" />
+    <link rel="stylesheet" type="text/css" href="/static/register.css" />
+    <link rel="icon" href="/static/icon/favicon.ico"/>
+    <link rel="bookmark" href="/static/icon/favicon.ico">
+  </head>
+  <body>
+    <div class="">
+        <button class="Sidebar_btn" onclick="openSidebar()">
+            <svg>
+              <line x1='7' y1='13' x2='22' y2='13' style="stroke: rgb(133, 133, 133);stroke-width: 2;"/>
+              <line x1='7' y1='18' x2='22' y2='18' style="stroke: rgb(133, 133, 133);stroke-width: 2;"/>
+              <line x1='7' y1='23' x2='22' y2='23' style="stroke: rgb(133, 133, 133);stroke-width: 2;"/>
+            </svg>
+          </button>
+          <div class="LeftContainer" style="width: 5em;">
+            <div id='Sidebar' class="Sidebar" style="left:0;width: 8em;">
+                <div class="group_btn">
+                    <button class="singleBtn" type="button" onclick="getRegister()">
+                      学生注册
+                    </button>
+                    <button class="singleBtn" type="button" onclick="getManager()">
+                      学生管理
+                    </button>
+                    <button class="singleBtn" type="button" onclick="getRWP()">
+                      图片识别
+                    </button>
+                    <button class="singleBtn" type="button" onclick="getCheckin()">
+                      课堂点名
+                    </button>
+                  </div>
+            </div>
+          </div>
+      <div id="RightContainer" class="RightContainer">
+        <div class="text_title">
+          这是一个基于web的课堂点名系统，主要有以下功能：
+        </div>
+        <div class="text_point">1.学生注册</div>
+        <div class="text_">
+          教师可以注册其所在班级的学生，以便绑定教师与学生的关系。
+        </div>
+        <div class="text_point">2.学生管理</div>
+        <div class="text_">教师可以选择删除已与其绑定的学生的绑定关系。</div>
+        <div class="text_point">3.图片识别</div>
+        <div class="text_">可以上传一个或多个图片，并返回识别结果。</div>
+        <div class="text_point">4.课堂点名</div>
+        <div class="text_">
+          打开摄像头开始本次点名，结束点名后可获得系统返回的比对结果。
+        </div>
+      </div>
+    </div>
+    <div class="userinfo_block_div">欢迎使用!{{UserName}}</div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+{% for key in resultList %}
+    {% if resultList[key][0] %}
+        <h2>{{ key }}:</h2>
+        {% for item in resultList[key] %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+</html>
